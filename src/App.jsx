@@ -4,7 +4,8 @@ import MovieCard from "./MovieCard";
 import Search from "./assets/search.svg";
 
 const App = () => {
-  const API_KEY = import.meta.env.VITE_MOVIE_API_KEY;
+  const API_KEY =
+    import.meta.env.VITE_MOVIE_API_KEY || process.env.VITE_MOVIE_API_KEY;
   const API_URL = `https://www.omdbapi.com?apikey=${API_KEY}`;
 
   const [movies, setMovies] = useState([]);
