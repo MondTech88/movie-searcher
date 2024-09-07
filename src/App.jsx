@@ -5,7 +5,7 @@ import Search from "./assets/search.svg";
 
 const App = () => {
   const API_KEY = import.meta.env.VITE_MOVIE_API_KEY;
-  const API_URL = `http://www.omdbapi.com?apikey=${API_KEY}`;
+  const API_URL = `https://www.omdbapi.com?apikey=${API_KEY}`;
 
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
